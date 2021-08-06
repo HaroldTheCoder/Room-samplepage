@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
 }
-
+html, body {
+    position: relative;
+    overflow-x: hidden;
+}
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 12px;
