@@ -3,17 +3,15 @@
     margin: 0;
     padding: 0;
 }
-html, body {
-    position: relative;
-    overflow: hidden;
-}
+
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 12px;
 }
 #main-content {
-    height: 100%;
+    height: auto;
     width: 100%;
+    overflow: hidden;
 }
 .img-mobile {
     display: none;
@@ -237,9 +235,6 @@ img {
     .mobile-link {
         color: hsl(0, 0%, 0%);
         text-decoration: none;
-    }
-    #main-content {
-       
     }
     #main-header {
         height: 100%;
