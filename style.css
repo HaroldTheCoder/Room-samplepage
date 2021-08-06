@@ -239,8 +239,7 @@ img {
         text-decoration: none;
     }
     #main-content {
-        height: auto;
-        overflow-x: hidden;
+       
     }
     #main-header {
         height: 100%;
