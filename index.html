@@ -35,13 +35,16 @@
 
         <div class="mobile-navbar">
             <div class="menu-button">
-                <img src="images/icon-hamburger.svg" alt="">
+                <img src="images/icon-hamburger.svg" alt="" class="open">
             </div>
             <div class="logo-container-mobile">
                 <img src="images/logo.svg" alt="" class="logo-top">
             </div>
 
             <div class="link-container-mobile">
+                <div class="menu-button-close">
+                <img src="images/icon-close.svg" alt="" class="close">
+                </div>
                 <div class="link-box-mobile">
                     <a href="" class="mobile-link">Home</a><hr>
                 </div>
@@ -59,6 +62,7 @@
     </nav>
 
     <div id="main-content">
+        <div id="overlay"></div>
         <header id="main-header">
             <div class="slider-container">
 
@@ -164,17 +168,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!--<div class="button-container">
-                    <div class="button-slider-container fade">
-                        <div class="prev">
-                            <img src="images/icon-angle-left.svg" alt="">
-                        </div>
-                        <div class="next">
-                            <img src="images/icon-angle-right.svg" alt="">
-                        </div>
-                    </div>
-                </div>-->
             </div>
         </header>
        
@@ -194,11 +187,6 @@
             </div>
         </div>
     </div> 
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
     <script src="java.js"></script>
 </body>
 </html>
