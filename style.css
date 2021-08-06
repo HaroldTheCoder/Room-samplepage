@@ -243,7 +243,8 @@ img {
         height: 100%;
     }
     h1 {
-        font-size: 2.50em;
+        font-size: 2.05em;
+        width: 100%;
     }
     h2 {
         font-size: 1.10em;
@@ -258,7 +259,7 @@ img {
         width: 100%;
     }
     .slider-content-right {
-        padding: 3em 2em 3em 2em;
+        padding: 7em 3.50em 7em 3.50em;
     }
     .header-link {
         padding: 3em 0 2em 0;
