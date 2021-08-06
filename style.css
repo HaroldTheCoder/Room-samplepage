@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
 }
-
+html, body {
+    margin: 0;
+}
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 12px;
 }
 #main-content {
-    height: auto;
     width: 100%;
     overflow: hidden;
 }
@@ -181,7 +182,7 @@ img {
 #content-bottom {
     display: grid;
     grid-template-areas: "img-left content-center img-right";
-    height: 34.8vh;
+      height: 34.8vh;
 }
 .img-left {
     grid-area: img-left;
@@ -307,5 +308,6 @@ img {
     grid-template-areas: "img-left" 
                             "content-center" 
                             "img-right";
+    height: auto;
 }
 }
