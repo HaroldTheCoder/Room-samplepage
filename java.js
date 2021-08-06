@@ -1,11 +1,14 @@
 const openButton = document.querySelector('.open');
 const closeButton = document.querySelector('.close');
 const navBar = document.querySelector('#main-navbar');
+const navLink = document.querySelectorAll('.mobile-link')
 const mobileMenu = document.querySelector('.link-container-mobile');
 const content = document.querySelector('#overlay');
 
 openButton.addEventListener('click', openNav);
-closeButton.addEventListener('click', closeNav)
+closeButton.addEventListener('click', closeNav);
+navLink.forEach((i) => i.addEventListener('click', closeNav));
+
 function openNav() {
     navBar.classList.toggle('nav-active');
     mobileMenu.classList.toggle('menu-active');
