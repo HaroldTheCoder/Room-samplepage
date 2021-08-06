@@ -5,7 +5,7 @@
 }
 html, body {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 body {
     font-family: 'Spartan', sans-serif;
