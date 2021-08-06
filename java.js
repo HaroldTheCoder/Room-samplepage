@@ -1,3 +1,21 @@
+const openButton = document.querySelector('.open');
+const closeButton = document.querySelector('.close');
+const navBar = document.querySelector('#main-navbar');
+const mobileMenu = document.querySelector('.link-container-mobile');
+const content = document.querySelector('#overlay');
+
+openButton.addEventListener('click', openNav);
+closeButton.addEventListener('click', closeNav)
+function openNav() {
+    navBar.classList.toggle('nav-active');
+    mobileMenu.classList.toggle('menu-active');
+    content.classList.toggle('active');
+};
+function closeNav() {
+    navBar.classList.remove("nav-active");
+	mobileMenu.classList.remove("menu-active");
+    content.classList.remove("active");
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 

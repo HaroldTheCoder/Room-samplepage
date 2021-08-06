@@ -5,10 +5,22 @@
 }
 html, body {
     margin: 0;
+    position: relative;
 }
 body {
     font-family: 'Spartan', sans-serif;
     font-size: 12px;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 997;
+    display: none;
 }
 #main-content {
     width: 100%;
@@ -182,7 +194,7 @@ img {
 #content-bottom {
     display: grid;
     grid-template-areas: "img-left content-center img-right";
-      height: 34.8vh;
+    height: 34.9vh;
 }
 .img-left {
     grid-area: img-left;
@@ -205,10 +217,19 @@ img {
     text-align: center;padding: 0.20em;
 }
 @media screen and (min-width: 385px) and (max-width: 600px) {
+    #overlay.active {
+        display: block;
+    }
     #main-navbar {
         width: 100%;
         z-index: 1000;
-        top: 5%;
+        top: 3%;
+        left: 7%;
+        display: block;
+    }
+    #main-navbar.nav-active {
+        top: 0;
+        left: 0;
     }
     .desktop-navbar {
         display: none;
@@ -216,26 +237,51 @@ img {
     .mobile-navbar {
         z-index: 1000;
         display: block;
+        position: relative;
     }
     .menu-button img {
-        width: 8%;
+        width: 6%;
         display: inline;
         float: left;
     }
     .link-container-mobile {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 4em 2em 4em 2em;
         background-color: hsl(0, 0%, 100%);
+        display: none;
+    }
+    .menu-active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
     }
     .logo-container-mobile img {
-      width: 20%;
+      width: 18%;
       display: inline;
       float: left;
-      margin-left: 25%;
+      margin-left: 27%;
+      margin-top: 1%;
 
+    }
+    .menu-button-close {
+
+    }
+    .close {
+        width: 100%;
+    }
+    .link-box-mobile {
+       
     }
     .mobile-link {
         color: hsl(0, 0%, 0%);
+        text-transform: lowercase;
+        font-weight: 900;
         text-decoration: none;
+        display: inline-block;
     }
     #main-header {
         height: 100%;
